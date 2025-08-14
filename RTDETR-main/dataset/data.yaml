@@ -1,0 +1,11 @@
+# dataset path
+path: /mnt/workspace/RTDETR-main/datasetsar
+train: ./images/train
+val: ./images/val
+test: ./images/test
+
+# number of classes
+nc: 7
+
+# class names
+names: ['A330', 'A320/321', 'A220', 'ARJ21', 'Boeing737', 'Boeing787', 'other']
