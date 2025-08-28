@@ -25,7 +25,7 @@ Install dependencies: pip install -r requirements.txt
 
 ```
 ├── train.py          # Train the model
-├── detect.py      # Run detection on images
+├── val.py            # Val Evaluate model
 ├── models/           # Model definition files
 ├── utils/            # Helper functions
 └── README.md
@@ -58,7 +58,6 @@ Install dependencies:
 
 ### step2. Configure Training
 
-![image-20250828150639362](C:\Users\陈梦欣\AppData\Roaming\Typora\typora-user-images\image-20250828150639362.png)
 
 Configuration Files:
 
@@ -78,8 +77,3 @@ Dataset configuration file:
 
 `python val.py `
 
-## Rusults
-
-Below are some sample detection results using the trained DBS-RTDETR model on SAR aircraft images:
-
-![拼图](C:\Users\陈梦欣\Desktop\论文参考文献\拼图.png)
