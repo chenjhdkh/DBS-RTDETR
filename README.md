@@ -59,7 +59,7 @@ Install dependencies:
 ### step2. Configure Training
 
 Configuration Files:
-
+<img width="920" height="482" alt="image-20250828202817478" src="https://github.com/user-attachments/assets/0552a780-e3db-4300-b13c-7100e0c5c251" />
 Model configuration file:
 
 `DBS-RTDETR\RTDETR-main\ultralytics\cfg\models\rt-detr\DBS-RTDETR.yaml`
@@ -75,3 +75,4 @@ Dataset configuration file:
 ###  step4. Evaluate DBS-RTDETR
 
 `python val.py `
+
