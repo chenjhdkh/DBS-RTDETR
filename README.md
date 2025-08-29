@@ -57,9 +57,8 @@ Install dependencies:
 `pip install -r requirements.txt `
 
 ### step2. Configure Training
-
+<img width="1582" height="634" alt="b3e676139e18c2614d65bccc87bd1dce" src="https://github.com/user-attachments/assets/1c0d66e8-78b6-4dbe-84ac-34a203ba2471" />
 Configuration Files:
-<img width="920" height="482" alt="image-20250828202817478" src="https://github.com/user-attachments/assets/0552a780-e3db-4300-b13c-7100e0c5c251" />
 Model configuration file:
 
 `DBS-RTDETR\RTDETR-main\ultralytics\cfg\models\rt-detr\DBS-RTDETR.yaml`
@@ -76,3 +75,8 @@ Dataset configuration file:
 
 `python val.py `
 
+## Rusults
+
+Below are some sample detection results using the trained DBS-RTDETR model on SAR aircraft images:
+
+<img width="1230" height="390" alt="result" src="https://github.com/user-attachments/assets/a4339dd4-fc35-41dd-b03e-9fab1c3e564d" />
