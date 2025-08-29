@@ -57,7 +57,7 @@ Install dependencies:
 `pip install -r requirements.txt `
 
 ### step2. Configure Training
-
+<img width="1582" height="634" alt="b3e676139e18c2614d65bccc87bd1dce" src="https://github.com/user-attachments/assets/643f6e9d-51ad-4fe3-8a44-f57413b74e07" />
 
 Configuration Files:
 
@@ -76,4 +76,9 @@ Dataset configuration file:
 ###  step4. Evaluate DBS-RTDETR
 
 `python val.py `
+
+## Rusults
+
+Below are some sample detection results using the trained DBS-RTDETR model on SAR aircraft images:
+<img width="1230" height="390" alt="result" src="https://github.com/user-attachments/assets/ff065ae4-26da-4695-835e-e911ca3a671b" />
 
