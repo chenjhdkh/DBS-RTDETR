@@ -11,7 +11,7 @@ This code implements our proposed approach for robust and accurate aircraft targ
 
 ## Requirements
 
-```
+```text
 python >= 3.8
 torch >= 1.10
 torchvision
@@ -19,63 +19,58 @@ numpy
 opencv-python
 tqdm
 Install dependencies: pip install -r requirements.txt
-```
 
 ## Files
 
-```
 ├── train.py          # Train the model
 ├── val.py            # Val Evaluate model
 ├── models/           # Model definition files
 ├── utils/            # Helper functions
 └── README.md
-```
+Pre-trained Weights: The primary model weights (best.pt) required to reproduce the key findings of this study can be downloaded from the Releases page of this repository.
 
-## Dataset
+## Dataset& Preprocessing
 
-```
 /dataset/
 ├── datasetsar/       # Experimental dataset
 ├── data.yaml         # Dataset configuration file
 ├── split_data.py     # Script to split training/validation/test sets
 ├── xml2txt.py        # Convert XML annotations to TXT format
 └── yolo2coco.py      # Convert YOLO format to COCO format
-```
 
-Prepare the dataset:
+Prepare the dataset & Preprocessing:
 
-1. Edit `data.yaml` to specify image paths and class information.
-2. Run `split_data.py` to split the dataset.
-3. Use `xml2txt.py` or `yolo2coco.py` to convert annotations into the required format.
+1. The SAR-AIRcraft-1.0 dataset used in this research is open-access. Please refer to the original publication for download details.
+
+2. Edit data.yaml to specify image paths and class information.
+
+3. Run split_data.py to standardize the training, validation, and test set splits.
+
+4. Use xml2txt.py or yolo2coco.py to convert annotations into the required format.
 
 ## Usage
 
 ### step1. Setup Environment
+Install dependencies:
 
-Install dependencies: 
-
-`pip install -r requirements.txt `
+pip install -r requirements.txt
 
 ### step2. Configure Training
-<img width="1582" height="634" alt="b3e676139e18c2614d65bccc87bd1dce" src="https://github.com/user-attachments/assets/643f6e9d-51ad-4fe3-8a44-f57413b74e07" />
-
 Configuration Files:
 
 Model configuration file:
 
-`DBS-RTDETR\RTDETR-main\ultralytics\cfg\models\rt-detr\DBS-RTDETR.yaml`
+DBS-RTDETR\RTDETR-main\ultralytics\cfg\models\rt-detr\DBS-RTDETR.yaml
 
 Dataset configuration file:
 
-`DBS-RTDETR\RTDETR-main\dataset\data.yaml`
+DBS-RTDETR\RTDETR-main\dataset\data.yaml
 
 ### step3. Train DBS-RTDETR
+python train.py
 
-`python train.py`
-
-###  step4. Evaluate DBS-RTDETR
-
-`python val.py `
+### step4. Evaluate DBS-RTDETR
+python val.py
 
 ## Rusults
 
