@@ -29,9 +29,10 @@ Install dependencies: pip install -r requirements.txt
 ├── models/           # Model definition files
 ├── utils/            # Helper functions
 └── README.md
+Pre-trained Weights: The primary model weights (best.pt) required to reproduce the key findings of this study can be downloaded from the Releases page of this repository.
 ```
 
-## Dataset
+## Dataset& Preprocessing
 
 ```
 /dataset/
@@ -42,11 +43,11 @@ Install dependencies: pip install -r requirements.txt
 └── yolo2coco.py      # Convert YOLO format to COCO format
 ```
 
-Prepare the dataset:
-
-1. Edit `data.yaml` to specify image paths and class information.
-2. Run `split_data.py` to split the dataset.
-3. Use `xml2txt.py` or `yolo2coco.py` to convert annotations into the required format.
+Prepare the dataset & Preprocessing:
+1. The SAR-AIRcraft-1.0 dataset used in this research is open-access. Please refer to the original publication for download details.
+2. Edit `data.yaml` to specify image paths and class information.
+3. Run `split_data.py` to standardize the training, validation, and test set splits.
+4. Use `xml2txt.py` or `yolo2coco.py` to convert annotations into the required format.
 
 ## Usage
 
